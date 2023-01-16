@@ -16,3 +16,18 @@ navBar.forEach(function (a){
         navCollapse.classList.remove("show");
     })
 })
+
+
+
+
+
+
+
+
+$('.button').click(function() {
+    $('.label').html(function(i, val) { 
+      return val*1+0.5
+    });
+});
+
+
