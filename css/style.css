@@ -20,7 +20,7 @@
     padding: 0;
 }
 
-:root {
+:root{
     /* Background Color */
     --primary-color: #6a040f;
     --secondary-color: #0e1525;
@@ -397,8 +397,15 @@ box-shadow: none !important;
 .search .container{
     border-bottom:2px solid #6e6e70 ;
 }
+.search-left input:focus{
+    background-color: white;
+    color: black;
+}
 .search-left input{
-    border: 2px solid #6a040f;
+    border: none;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    color: white;
 }
 .poem-card .container{
     background-color: white;
@@ -434,3 +441,119 @@ box-shadow: none !important;
     color: #6a040f !important;
     font-weight: 500;
 }
+
+
+/*like*/
+
+.large-font{
+    font-size:xxx-large;
+  }
+  ion-icon.active{
+    animation:like 0.5s 1;
+    fill:red;
+    stroke:none;
+  }
+  ion-icon{
+    fill:transparent;
+    stroke:#6a040f;
+    stroke-width:30;
+    transition:all 0.5s;
+  }
+  
+  @-webkit-keyframes like{
+    0%   { transform: scale(1); }
+    90%   { transform: scale(1.2); }
+    100% { transform: scale(1.1); }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+  .like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .like-button.animated {
+    -webkit-animation: pop 0.9s both;
+    animation: pop 0.9s both;
+  }
+  .like-button svg {
+    opacity: 1;
+  }
+  .like-button svg path {
+    fill: #333;
+    transition: fill .4s ease-out;
+  }
+  .like-button.active svg path {   
+    fill: #6a040f;
+   }
+  
+  @-webkit-keyframes pop {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pop {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  } 
