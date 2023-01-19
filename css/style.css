@@ -400,12 +400,15 @@ box-shadow: none !important;
 .search-left input:focus{
     background-color: white;
     color: black;
+    transition: .8s ease;
 }
 .search-left input{
     border: none;
     border-bottom: 3px solid white;
     background-color: transparent;
     color: white;
+    transition: 0.5s ease;
+
 }
 .poem-card .container{
     background-color: white;
@@ -557,3 +560,10 @@ box-shadow: none !important;
       transform: scale3d(1, 1, 1);
     }
   } 
+
+
+
+
+
+
+

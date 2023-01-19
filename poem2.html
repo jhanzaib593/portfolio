@@ -19,16 +19,82 @@
 
     <!--Font awesome CDN Links-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 
     <!--Custome Files Link-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.style.css">
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/slider.css">
+
+
+
+<script>
+  $(document).ready(function()
+{
+
+   
+        if($('.bbb_viewed_slider').length)
+        {
+            var viewedSlider = $('.bbb_viewed_slider');
+
+            viewedSlider.owlCarousel(
+            {
+                loop:true,
+                margin:30,
+                autoplay:true,
+                autoplayTimeout:6000,
+                nav:false,
+                dots:false,
+                responsive:
+                {
+                    0:{items:1},
+                    575:{items:2},
+                    768:{items:3},
+                    991:{items:4},
+                    1199:{items:6}
+                }
+            });
+
+            if($('.bbb_viewed_prev').length)
+            {
+                var prev = $('.bbb_viewed_prev');
+                prev.on('click', function()
+                {
+                    viewedSlider.trigger('prev.owl.carousel');
+                });
+            }
+
+            if($('.bbb_viewed_next').length)
+            {
+                var next = $('.bbb_viewed_next');
+                next.on('click', function()
+                {
+                    viewedSlider.trigger('next.owl.carousel');
+                });
+            }
+        }
+
+
+    });
+</script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
@@ -93,6 +159,8 @@
         </div>
       </div>
     </section>
+
+
         
     <section class="poem-card">
       <div class="container py-5 px-4 rounded">
@@ -108,33 +176,92 @@
           </div>
         </div>
 
+
+        <div class="content">   
+          <h2 class="text-dark text-center">Latest Poem</h2>
+            <div class="site-section bg-left-half mb-5">
+              <div class="container owl-2-style pt-5">
+                <div class="owl-carousel owl-2">
+                  <div class="media-29101">
+                    <div class="row">
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="#"><img src="images/poem/poem 1.png" alt="Image" class="rounded img-fluid"></a>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pt-2">
+                        <h3 class="mb-1"><a href="#" class="text-dark">The Screaming Earth</a></h3>
+                        <p style="font-size: 12px;">Faizan Khalid Mohsin</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media-29101">
+                    <div class="row">
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="#"><img src="images/poem/poem 2.png" alt="Image" class="rounded img-fluid"></a>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pt-2">
+                        <h3 class="mb-1"><a href="#" class="text-dark">What You Are Seeking</a></h3>
+                        <p style="font-size: 12px;">Faizan Khalid Mohsin</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media-29101">
+                    <div class="row">
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="#"><img src="images/poem/poem 1.png" alt="Image" class="rounded img-fluid"></a>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pt-2">
+                        <h3 class="mb-1"><a href="#" class="text-dark">The Screaming Earth</a></h3>
+                        <p style="font-size: 12px;">Faizan Khalid Mohsin</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media-29101">
+                    <div class="row">
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="#"><img src="images/poem/poem 1.png" alt="Image" class="rounded img-fluid"></a>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pt-2">
+                        <h3 class="mb-1"><a href="#" class="text-dark">The Screaming Earth</a></h3>
+                        <p style="font-size: 12px;">Faizan Khalid Mohsin</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media-29101">
+                    <div class="row">
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <a href="#"><img src="images/poem/poem 1.png" alt="Image" class="rounded img-fluid"></a>
+                      </div>
+                      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pt-2">
+                        <h3 class="mb-1"><a href="#" class="text-dark">The Screaming Earth</a></h3>
+                        <p style="font-size: 12px;">Faizan Khalid Mohsin</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+        
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
         <div class="card-poem pt-5">
-          <div class="row">
+          <h2 class="text-dark text-center">Latest Poem</h2>
+
+          <div class="row pt-5">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
               <div class="card-poem-1 h-100 rounded pb-2" >
                 <img src="images/poem/poem 1.png" class="w-100 rounded-top">
                 <h3 class="text-dark px-4 pt-3">The Screaming Earth</h3>
                 <p class="px-4">Rub my face with dirt,</p>
                 <p class="px-4">Author: Faizan Khalid Mohsin</p> 
-                <div class="row px-4">
-                  <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-                    <div class='large-font top-20'>
-                      <ion-icon name="heart">
-                        <div class='red-bg'></div>
-                      </ion-icon>
-                    </div>
-                          <script>
-                            let icon = document.querySelector('ion-icon');
-                            icon.onclick = function(){
-                            icon.classList.toggle('active');
-                              }
-                            </script>
-                  </div>
-                  <div class="col-4 col-sm-4 col-md-8 col-lg-8 col-xl-8 pt-3">
-                    <a class="px-4 pt-5" data-bs-toggle="modal" data-bs-target="#card-poem-1">Veiw All</a>
-                  </div>
-                </div>  
-                  
+               
+                <a class="px-4 pt-5" data-bs-toggle="modal" data-bs-target="#card-poem-1">Veiw All</a>
+
           
 
                   <!-- Modal -->
@@ -177,19 +304,9 @@
                 <h3 class="text-dark px-4 pt-3">What You Are Seeking</h3>
                 <p class="px-4">| have come from the beyond,</p>
                 <p class="px-4">Author: Faizan Khalid Mohsin</p> 
-                <div class="row px-4">
-                  <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
-                    <a href="#" class="like-button">
-                      <?xml version="1.0" encoding="utf-8"?>
-                      <svg width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M320 1344q0-26-19-45t-45-19q-27 0-45.5 19t-18.5 45q0 27 18.5 45.5t45.5 18.5q26 0 45-18.5t19-45.5zm160-512v640q0 26-19 45t-45 19h-288q-26 0-45-19t-19-45v-640q0-26 19-45t45-19h288q26 0 45 19t19 45zm1184 0q0 86-55 149 15 44 15 76 3 76-43 137 17 56 0 117-15 57-54 94 9 112-49 181-64 76-197 78h-129q-66 0-144-15.5t-121.5-29-120.5-39.5q-123-43-158-44-26-1-45-19.5t-19-44.5v-641q0-25 18-43.5t43-20.5q24-2 76-59t101-121q68-87 101-120 18-18 31-48t17.5-48.5 13.5-60.5q7-39 12.5-61t19.5-52 34-50q19-19 45-19 46 0 82.5 10.5t60 26 40 40.5 24 45 12 50 5 45 .5 39q0 38-9.5 76t-19 60-27.5 56q-3 6-10 18t-11 22-8 24h277q78 0 135 57t57 135z"/></svg>
-                      </a>
-                     
-                  </div>
-                  <div class="col-4 col-sm-4 col-md-8 col-lg-8 col-xl-8 pt-3">
-                    <a class="px-4" data-bs-toggle="modal" data-bs-target="#card-poem-2">Veiw All</a>
-                  </div>
-                </div>  
-                  
+              
+                <a class="px-4" data-bs-toggle="modal" data-bs-target="#card-poem-2">Veiw All</a>
+
 
                   <!-- Modal -->
                   <div class="modal fade" id="card-poem-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -233,8 +350,8 @@
                 <h3 class="text-dark px-4 pt-3">Hidden in Silence</h3>
                 <p class="px-4">Many secrets are hidden within silence.</p>
                 <p class="px-4">Author: Faizan Khalid Mohsin</p> 
-                <a class="px-4" data-bs-toggle="modal" data-bs-target="#card-poem-3">Veiw All</a>  
-                     
+                <a class="px-4" data-bs-toggle="modal" data-bs-target="#card-poem-3">Veiw All</a>
+                
                   <!-- Modal -->
                   <div class="modal fade" id="card-poem-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -283,57 +400,20 @@
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script>
-      let button = document.querySelector(".like-button");
-         button.addEventListener("click", function(e) {
-           e.preventDefault();
-           this.classList.toggle("active");
-           this.classList.add("animated");
-           generateClones(this);
-         });
 
 
-         function generateClones(button) {
-           let clones = randomInt(2, 4);
-           for (let it = 1; it <= clones; it++) {
-             let clone = button.querySelector("svg").cloneNode(true),
-               size = randomInt(5, 16);
-             button.appendChild(clone);
-             clone.setAttribute("width", size);
-             clone.setAttribute("height", size);
-             clone.style.position = "absolute";
-             clone.style.transition =
-               "transform 0.5s cubic-bezier(0.12, 0.74, 0.58, 0.99) 0.3s, opacity 1s ease-out .5s";
-             let animTimeout = setTimeout(function() {
-               clearTimeout(animTimeout);
-               clone.style.transform =
-                 "translate3d(" +
-                 (plusOrMinus() * randomInt(10, 25)) +
-                 "px," +
-                 (plusOrMinus() * randomInt(10, 25)) +
-                 "px,0)";
-               clone.style.opacity = 0;
-             }, 1);
-             let removeNodeTimeout = setTimeout(function() {
-               clone.parentNode.removeChild(clone);
-               clearTimeout(removeNodeTimeout);
-             }, 900);
-             let removeClassTimeout = setTimeout( function() {
-               button.classList.remove("animated")
-             }, 600);
-           }
-         }
 
 
-         function plusOrMinus() {
-           return Math.random() < 0.5 ? -1 : 1;
-         }
+    <script src="js/popper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mainjs.js"></script>
 
-         function randomInt(min, max) {
-           return Math.floor(Math.random() * (max - min + 1) + min);
-         }
 
-       </script>
+
+
+
+
+
 </body>
 
 </html>
