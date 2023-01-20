@@ -433,6 +433,9 @@ box-shadow: none !important;
 .poem-card-text p{
     color: black;
 }
+.card-poem h2 span{
+    color: #6a040f;
+}
 .card-poem-1{
     box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.151);
     cursor: pointer;
@@ -444,126 +447,44 @@ box-shadow: none !important;
     color: #6a040f !important;
     font-weight: 500;
 }
-
-
-/*like*/
-
-.large-font{
-    font-size:xxx-large;
+.catalogue-poem h3::after{
+    content: "";
+    background: #6a040f;
+    display: block;
+    height: 1px;
+    width: 55%;
+    margin: -11px 140px;
+}
+.tag-poem a{
+    text-decoration: none;
+    color: #6e6e70;
+    border: 1px solid  #dedede;
+    display: inline-block;
+    line-height: 16px;
+    margin: 0 6px 6px 0;
+    padding: 5px 7px;
+    font-size: 12px!important;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.tag-poem a:hover{
+  background-color: #6a040f;
+  color: white;
+}
+.tag-poem1 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #6e6e70;
+    border: 1px solid  #dedede;
+    display: inline-block;
+    line-height: 16px;
+    margin: 0 6px 6px 0;
+    padding: 5px 7px;
+    font-size: 12px!important;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.tag-poem1 a:hover{
+    background-color: #6a040f;
+    color: white;
   }
-  ion-icon.active{
-    animation:like 0.5s 1;
-    fill:red;
-    stroke:none;
-  }
-  ion-icon{
-    fill:transparent;
-    stroke:#6a040f;
-    stroke-width:30;
-    transition:all 0.5s;
-  }
-  
-  @-webkit-keyframes like{
-    0%   { transform: scale(1); }
-    90%   { transform: scale(1.2); }
-    100% { transform: scale(1.1); }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-  .like-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .like-button.animated {
-    -webkit-animation: pop 0.9s both;
-    animation: pop 0.9s both;
-  }
-  .like-button svg {
-    opacity: 1;
-  }
-  .like-button svg path {
-    fill: #333;
-    transition: fill .4s ease-out;
-  }
-  .like-button.active svg path {   
-    fill: #6a040f;
-   }
-  
-  @-webkit-keyframes pop {
-    0% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-      transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-      transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-      transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-      transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-      transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  }
-  
-  @keyframes pop {
-    0% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-      transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-      transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-      transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-      transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-      transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
-    }
-  } 
-
-
-
-
-
-
-
