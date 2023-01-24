@@ -436,6 +436,9 @@ box-shadow: none !important;
 .card-poem h2 span{
     color: #6a040f;
 }
+.content h2 span{
+    color: #6a040f;
+}
 .card-poem-1{
     box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.151);
     cursor: pointer;
