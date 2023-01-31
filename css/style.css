@@ -5,9 +5,10 @@
 3. Banner
 4. About
 5. Services
-6. Portfolio
-6. Contact
-7. Footer
+6.Poem
+7.Portfolio
+8. Contact
+9. Footer
 -------------------- */
 
 /* 1 General */
@@ -316,7 +317,7 @@ box-shadow: none !important;
     color: var(--text-white);
    
 }
-/* 4 Services */
+/* 5 Services */
 .services_wrapper .card {
     background-color: var(--bg-dark-blue);
     cursor: pointer;
@@ -329,71 +330,7 @@ box-shadow: none !important;
     transform: translateY(-5px);
 }
 
-/* Poety */
-.banner_poem{
-    background-image: url(http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2016/11/project.jpg?id=1867);
-    object-fit: cover;
-    background-attachment: fixed;
-    opacity: 0.8;
-    padding: 13em 0em;
-}
-.poem-cont{
-    z-index: 1;
-    padding-top: 5em;
-    position: relative;
-}
-.poem-cont .rounded{
-    background: #6a040f;
-    
-}
-.poem-img{
-    position: absolute;
-    right: 7em;
-}
-.poem-cont-text{
-    font-size: 10px;
-    line-height: 1.3;
-}
-
-/* poem */
-.poems .container{
-    position: relative;
-}
-.poems-text{
-    background-color: white !important;
-    position: absolute;
-    width: 100%;
-    top: -10em;
-    padding: 5em 8em;
-
-}
-.poems-text h3::after{
-    content: "";
-    background: #6a040f;
-    display: block;
-    height: 2px;
-    width: 10%;
-    margin: 16px auto;
-}
-.poem-header h1{
-    color: #00000012;
-    font-size: 13rem;
-    pointer-events: none;
-    position: absolute;
-}
-.poem-contant{
-    padding: 1em 5em;
-}
-.poem1 p{
-    color: #6e6e70;
-}
-.poem1-author{
-    color: #6a040f96;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 2;
-}
-/*poem2*/
+/* 6 Poem*/
 .search .container{
     border-bottom:2px solid #6e6e70 ;
 }
@@ -436,9 +373,6 @@ box-shadow: none !important;
 .card-poem h2 span{
     color: #6a040f;
 }
-.content h2 span{
-    color: #6a040f;
-}
 .card-poem-1{
     box-shadow: 0 7px 21px 0 rgba(0, 0, 0, 0.151);
     cursor: pointer;
@@ -450,6 +384,7 @@ box-shadow: none !important;
     color: #6a040f !important;
     font-weight: 500;
 }
+
 .catalogue-poem h3::after{
     content: "";
     background: #6a040f;
@@ -491,3 +426,128 @@ box-shadow: none !important;
     background-color: #6a040f;
     color: white;
   }
+
+.poem-cont-text{
+    font-size: 10px;
+    line-height: 1.3;
+}
+.modal-btn-poem{
+display: inline-block;
+border-radius: 50px;
+transition: all .4s ease-in-out;
+padding: 8px !important;
+margin-left:1em;
+background-color: transparent;
+border: 2px solid var(--primary-color);
+color: white;
+font-weight: bold;
+font-size: 14px;
+letter-spacing: 2px;
+text-decoration: none;
+}
+.modal-btn-poem:hover {
+background-color: var(--primary-color);
+border-color: var(--primary-color);
+color: white !important;
+
+}
+/*7.Portfolio*/
+.portfolio_wrapper .card {
+    height:100%;
+    min-height: 350px;
+    overflow: hidden;
+    border: 1px solid var(--bg-white);
+    cursor: pointer;
+    box-shadow: 0 0 16px 4px var(--bg-dark-blue); 
+}
+.portfolio_wrapper .card span {
+    transition: background-position 4s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+.projects_wrapper .card {
+    height: 100%;
+    min-height: 260px;
+    box-shadow: 0 0 16px 4px var(--bg-dark-blue);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.projects_wrapper .card .offer-text {
+    width: 50%;
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+  
+
+/*3*/
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	padding: 0 70px;
+}
+.carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 290px;
+}
+.carousel-item img{
+    padding: 1em 2em;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	top: 50%;
+	background: none;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 68px;
+	line-height: 42px;
+	position: absolute;
+	display: inline-block;
+	color: #6a040f;
+	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	margin: 1px 3px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #6a040f;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators{
+    margin-bottom: -4em;
+}
