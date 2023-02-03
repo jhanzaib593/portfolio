@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+
+   /*like*/
+   .like-button {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .like-button:active {
+    background-color: #007bff;
+  }
+  
+  </style>
+</head>
+<body>
+  <button class="like-button btn btn-primary" data-like-count="0">
+    <i class="fa fa-thumbs-up"></i>Like
+  </button>   
+  <button class="like-button btn btn-primary" data-like-count="0">
+    <i class="fa fa-thumbs-up"></i>Like
+  </button>   
+  <button class="like-button btn btn-primary" data-like-count="0">
+    <i class="fa fa-thumbs-up"></i>Like
+  </button>   
+  <script>
+    var button = document.querySelector(".like-button");
+
+// Get the initial like count from local storage
+var likeCount = localStorage.getItem("likeCount") || 0;
+
+// Update the button with the current like count
+button.setAttribute("data-like-count", likeCount);
+button.innerHTML = '<i class="fa fa-thumbs-up"></i>Like (' + likeCount + ')';
+
+button.addEventListener("click", function() {
+// Increment the like count
+likeCount++;
+
+// Update the button with the new like count
+button.setAttribute("data-like-count", likeCount);
+button.innerHTML = '<i class="fa fa-thumbs-up"></i>Like (' + likeCount + ')';
+
+// Save the new like count to local storage
+localStorage.setItem("likeCount", likeCount);
+});
+
+
+   </script>         
+</body>
+</html>
