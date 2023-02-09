@@ -24,6 +24,7 @@
         background-color: var(--bg-dark-blue);
         padding-bottom: 15px;
     }
+   
 
     .header_wrapper .nav-item .nav-link {
         margin-top: 15px;
@@ -57,6 +58,7 @@
         color: black;
     }   
     
+    
 }
 @media only screen and ( min-width:150px) and ( max-width:991px){
 
@@ -65,8 +67,11 @@
         border: 2px solid white;
         color: white;
     }
-    
+    .blog_wrapper .container h2{
+        padding-right: 0 !important;
+        line-height: 1em !important;
     }
+}
 
 @media (max-width: 767px) {
 
@@ -122,5 +127,6 @@
         padding: 0px;
         height: 21em;
     }
+    
 }
 

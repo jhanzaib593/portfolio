@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.style.css">
     <link rel="stylesheet" href="css/style2.css">    
+   
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
@@ -82,8 +83,19 @@
     <section class="categories_wrapper">
         <div class="container">
             <p class="h2 text-light fw-bold fst-italic">Categories</p>
-            <div class="row pt-5">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="row pt-5" id="myBtnContainer">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 pt-4 btn active" onclick="filterSelection('all')">
+                    <div class="categories_blog">
+                        <img src="https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200" 
+                        class="w-100" height="300">
+                        <div class="blog-text">
+                            <p class="h5 fw-bolder pb-4">Show All</p>
+                           <!-- <p class="h5 fw-bolder" style="margin:-15px 0px -4px;">Don’t be afraid</p>
+                            <p>Lauren Langford</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 pt-4 btn " onclick="filterSelection('Git')">
                     <div class="categories_blog">
                         <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2017/03/git-1.png" 
                         class="w-100" height="300">
@@ -94,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 pt-4 btn" onclick="filterSelection('Python')">
                     <div class="categories_blog">
                         <img src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg?crop=4:3" 
                         class="w-100" height="300">
@@ -105,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 pt-4 btn" onclick="filterSelection('R language')">
                     <div class="categories_blog">
                         <img src="https://miro.medium.com/max/990/0*l9-9V7yetcbz-YKC.jpg" 
                         class="w-100" height="300">
@@ -116,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 pt-4 btn" onclick="filterSelection('SQL')">
                     <div class="categories_blog">
                         <img src="https://blog.servermania.com/wp-content/uploads/2020/07/iStock-1188511715.jpg" 
                         class="w-100" height="300">
@@ -131,69 +143,72 @@
         </div>
     </section>
 
-    <section class="post_wrapper">
-        <div class="container">
-            <h2 class="fst-italic">Post</h2>  
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4">
-                    <div class="post_blog">
-                        <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2017/03/git-1.png" 
-                        class="w-100 post_img" height="400">
-                         <div class="post-author">
-                            <img src="images/portfolio/bg-image.jpg" width="40" height="40">
-                         </div>
-                         <div class="post_categories px-3 py-4">
-                            <a href="#" class="text-decoration-none">Git & GitHub</a>
-                         </div>
-                         <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
-                         <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4">
-                    <div class="post_blog">
-                        <img src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg?crop=4:3" 
-                        class="w-100 post_img" height="400">
-                         <div class="post-author">
-                            <img src="images/portfolio/bg-image.jpg" width="40" height="40">
-                         </div>
-                         <div class="post_categories px-3 py-4">
-                            <a href="#" class="text-decoration-none">Python</a>
-                         </div>
-                         <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
-                         <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4">
-                    <div class="post_blog">
-                        <img src="https://miro.medium.com/max/990/0*l9-9V7yetcbz-YKC.jpg" 
-                        class="w-100 post_img" height="400">
-                         <div class="post-author">
-                            <img src="images/portfolio/bg-image.jpg" width="40" height="40">
-                         </div>
-                         <div class="post_categories px-3 py-4">
-                            <a href="#" class="text-decoration-none">R language</a>
-                         </div>
-                         <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
-                         <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4">
-                    <div class="post_blog">
-                        <img src="https://blog.servermania.com/wp-content/uploads/2020/07/iStock-1188511715.jpg" 
-                        class="w-100 post_img" height="400">
-                         <div class="post-author">
-                            <img src="images/portfolio/bg-image.jpg" width="40" height="40">
-                         </div>
-                         <div class="post_categories px-3 py-4">
-                            <a href="#" class="text-decoration-none">SQL</a>
-                         </div>
-                         <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
-                         <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
-                    </div>
+   
+
+<section class="post_wrapper">
+    <div class="container">
+        <h2 class="fst-italic">Post</h2>  
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4 filterDiv Git">
+                <div class="post_blog">
+                    <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2017/03/git-1.png" 
+                    class="w-100 post_img" height="400">
+                     <div class="post-author">
+                        <img src="images/portfolio/bg-image.jpg" width="40" height="40">
+                     </div>
+                     <div class="post_categories px-3 py-4">
+                        <a href="#" class="text-decoration-none">Git & GitHub</a>
+                     </div>
+                     <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
+                     <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
                 </div>
             </div>
-        </div>    
-    </section>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4 filterDiv Python">
+                <div class="post_blog">
+                    <img src="https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg?crop=4:3" 
+                    class="w-100 post_img" height="400">
+                     <div class="post-author">
+                        <img src="images/portfolio/bg-image.jpg" width="40" height="40">
+                     </div>
+                     <div class="post_categories px-3 py-4">
+                        <a href="#" class="text-decoration-none">Python</a>
+                     </div>
+                     <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
+                     <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4 filterDiv R language">
+                <div class="post_blog">
+                    <img src="https://miro.medium.com/max/990/0*l9-9V7yetcbz-YKC.jpg" 
+                    class="w-100 post_img" height="400">
+                     <div class="post-author">
+                        <img src="images/portfolio/bg-image.jpg" width="40" height="40">
+                     </div>
+                     <div class="post_categories px-3 py-4">
+                        <a href="#" class="text-decoration-none">R language</a>
+                     </div>
+                     <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
+                     <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 pt-4 filterDiv SQL">
+                <div class="post_blog">
+                    <img src="https://blog.servermania.com/wp-content/uploads/2020/07/iStock-1188511715.jpg" 
+                    class="w-100 post_img" height="400">
+                     <div class="post-author">
+                        <img src="images/portfolio/bg-image.jpg" width="40" height="40">
+                     </div>
+                     <div class="post_categories px-3 py-4">
+                        <a href="#" class="text-decoration-none">SQL</a>
+                     </div>
+                     <p class="h4 fw-bold post_text">Creating is a privilege but it’s also a gift</p>
+                     <p class="">Nullam vel lectus vel velit pellentesque dignissim nec id magna. Cras molestie ornare quam at semper. Proin a ipsum ex. Curabitur eu venenatis justo. Nullam felis</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
 
 
     <!--Bootsrap 5 js CDN Links-->

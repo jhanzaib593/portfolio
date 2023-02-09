@@ -621,3 +621,16 @@ color: white !important;
     padding: 6px;
     transition: 0.5s;
 }
+
+#myBtnContainer .active{
+    display: block;
+}
+  .filterDiv {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+
