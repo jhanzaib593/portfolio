@@ -24,11 +24,11 @@ navBar.forEach(function (a){
 
 
 
-$('.button').click(function() {
-    $('.label').html(function(i, val) { 
-      return val*1+0.5
-    });
-});
+// $('.button').click(function() {
+//     $('.label').html(function(i, val) { 
+//       return val*1+0.5
+//     });
+// });
 
 
 
