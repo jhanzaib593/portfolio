@@ -451,6 +451,16 @@ border-color: var(--primary-color);
 color: white !important;
 
 }
+.p_poem{
+  border-radius: 10px;
+}
+.p_poem img{
+  border-radius: 10px !important;
+}
+.p_poem p{
+  color: #000000 !important;
+  margin-bottom: 0 !important;
+}
 
 /*6 Portfolio*/
 .col-center {
