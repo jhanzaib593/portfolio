@@ -45,7 +45,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -438,7 +438,7 @@ transition: all .4s ease-in-out;
 padding: 8px !important;
 margin-left:1em;
 background-color: transparent;
-border: 2px solid white;
+border: 2px solid #6e6e70;
 color: white;
 font-weight: bold;
 font-size: 14px;
@@ -653,7 +653,7 @@ color: white !important;
     border-bottom: 2px solid white;
   }
   .offcanvas-body input:focus{
-    background-color: #6a040f;
+    background-color: white;
     color: white;
     border: 2px solid white;
   } 
@@ -663,7 +663,7 @@ color: white !important;
     border-bottom: 2px solid white;
   }
   .offcanvas-body textarea:focus{
-    background-color: #6a040f;
+    background-color: white;
     color: white;
     border: 2px solid white;
   } 

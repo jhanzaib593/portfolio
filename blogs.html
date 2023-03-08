@@ -22,6 +22,7 @@
     <!--Custome Files Link-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.style.css">
+    <link rel="stylesheet" href="css/style2.css">    
    
 </head>
 <body>
@@ -59,7 +60,9 @@
                             <a class="nav-link active" href="blogs.html">Blogs</a>
                         </li>
                         <li class="nav-item mt-3 mt-lg-0">
-                            <a class="main-btn" href="index.html#contact">Contact</a>
+                            <a>
+                                <button class="main-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#Contact">Contact</button>  
+                            </a>
                         </li>
 
                     </ul>
@@ -211,26 +214,54 @@
     </section>
     <!--Post section end-->
 
-    <!--Footer section-->
-    <footer>
-        <div class="container">
-            <div class="row pt-4">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
-                    <p>COPYRIGHT 2023, <a href="https://www.linkedin.com/in/faizan-khalid-mohsin/">Faizan Khalid Mohsin</a>. ALL RIGHTS RESERVED. | DESIGNED BY <a href="https://www.linkedin.com/in/urooj-badar-b39a9623a/">Urooj Badar</a></p>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="social-link text-center">   
-						<a class="text-decoration-none m-2 bi bi-twitter" href="https://twitter.com/faizankms" target="_blank"></a>
-						<a class="text-decoration-none m-2 bi bi-youtube" href="https://www.youtube.com/@igig97y9gib" target="_blank"></a>
-						<a class="text-decoration-none m-2 bi bi-github" href="https://github.com/FaizanKhalidMohsin" target="_blank"></a>
-						<a class="text-decoration-none m-2 bi bi-linkedin" href="https://www.linkedin.com/in/faizan-khalid-mohsin/" target="_blank"></a>
-						<a class="text-decoration-none m-2 bi bi-instagram" href="https://www.instagram.com/faizankhalidmohsin/" target="_blank"></a>						
-					</div>
-                </div>                
+   <!--Footer section-->
+   <footer>
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                <p>COPYRIGHT 2023, <a href="https://www.linkedin.com/in/faizan-khalid-mohsin/">Faizan Khalid Mohsin</a>. ALL RIGHTS RESERVED. | DESIGNED BY <a href="https://www.linkedin.com/in/urooj-badar-b39a9623a/">Urooj Badar</a></p>
             </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="social-link text-center">   
+        <a class="text-decoration-none m-2 bi bi-twitter" href="https://twitter.com/faizankms" target="_blank"></a>
+        <a class="text-decoration-none m-2 bi bi-youtube" href="https://www.youtube.com/@igig97y9gib" target="_blank"></a>
+        <a class="text-decoration-none m-2 bi bi-github" href="https://github.com/FaizanKhalidMohsin" target="_blank"></a>
+        <a class="text-decoration-none m-2 bi bi-linkedin" href="https://www.linkedin.com/in/faizan-khalid-mohsin/" target="_blank"></a>
+        <a class="text-decoration-none m-2 bi bi-instagram" href="https://www.instagram.com/faizankhalidmohsin/" target="_blank"></a>						
+      </div>
+            </div>                
         </div>
-    </footer>
-    <!--Footer section end-->
+    </div>
+  </footer>
+  <!--Footer section end-->
+        <!-- Contact form Section -->
+    <!-- Offcanvas Sidebar -->    
+      
+    <div class="offcanvas offcanvas-end" id="Contact" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvas-Label">Contact Us</h5>
+          <button type="button" class="btn-close text-reset" id="offcanvas-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pt-5 px-3">
+            <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label text-white">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label text-white">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label text-white">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light" id="submit-btn">Send</button>
+              </form>
+        </div>
+      </div>
+  
+    <!-- Contact form Section end -->
 
        <!--Bootsrap 5 js CDN Links-->
        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

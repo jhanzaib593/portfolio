@@ -124,10 +124,10 @@
                             <a class="nav-link" href="blogs.html">Blogs</a>
                         </li>
                         <li class="nav-item mt-3 mt-lg-0">
-                            <a class="main-btn" href="contact.html">Contact</a>
-                        </li>
-
-                    </ul>
+                          <a>
+                              <button class="main-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#Contact">Contact</button>  
+                          </a>
+                      </li>
                 </div>
             </div>
         </nav>
@@ -456,6 +456,34 @@
         </div>
       </div>
     </section>
+        <!-- Contact form Section -->
+    <!-- Offcanvas Sidebar -->    
+      
+    <div class="offcanvas offcanvas-end" id="Contact" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvas-Label">Contact Us</h5>
+        <button type="button" class="btn-close text-reset" id="offcanvas-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-5 px-3">
+          <form>
+              <div class="mb-3">
+                <label for="name" class="form-label text-white">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label text-white">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-light" id="submit-btn">Send</button>
+            </form>
+      </div>
+    </div>
+
+  <!-- Contact form Section end -->
 
     <!--Footer section-->
     <footer>
