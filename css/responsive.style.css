@@ -148,3 +148,8 @@
     max-width: 613px;
     margin: 1.75rem auto;}
 }
+@media (min-width: 576px){
+    .modal-dialog1 {
+        max-width: 65em !important;
+        margin: 1.75rem auto !important;}
+    }
