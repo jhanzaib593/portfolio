@@ -694,8 +694,19 @@ color: white !important;
     opacity: 0.7;
     transition: 0.5s ease;
     transform: scale(1.1);
-    
   }
+    #more {
+      display: none;
+    }
+
+    #myBtn{
+      cursor: pointer;
+      border: 3px solid #6a040f;
+      padding: 5px;
+    }
+    .gallery_wrapper .row{   
+      margin-left: 0;
+    }
   
   /*Footer*/
   footer .container{
